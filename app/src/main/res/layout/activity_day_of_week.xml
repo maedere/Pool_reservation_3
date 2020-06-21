@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.DayOfWeekActivity">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/actionbar"
@@ -26,6 +28,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:visibility="invisible"
             android:id="@+id/btnTop"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
@@ -90,5 +93,20 @@
 
         </LinearLayout>
     </RelativeLayout>
-
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/noSans"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="برای این روز سانسی ثبت نشده است"
+            android:textSize="25sp"
+            android:textColor="#673AB7"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 </RelativeLayout>

@@ -19,7 +19,6 @@
             android:textSize="25sp"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-
             android:layout_marginTop="10dp"
             android:text="Name" />
 
@@ -44,19 +43,23 @@
 
         <Button
             android:id="@+id/edit"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="Button"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
             android:background="@drawable/buttonbordershadow"
-            />
+            android:layout_gravity="center_horizontal"/>
 
         <Button
             android:id="@+id/delete"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
             android:text="Button"
             android:background="@drawable/buttonbordershadow"
-            />
+            android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
 </LinearLayout>

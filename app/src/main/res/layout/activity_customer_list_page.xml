@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Customer_List_Page">
+    <RelativeLayout
+        android:id="@+id/reserved_list"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <ListView
         android:id="@+id/listView"
@@ -14,6 +20,20 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="41dp"
         android:dividerHeight="7.0px"
-        />
+        android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/no_reserve"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ثبت نامی برای این سانس وجود ندارد"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#545050"/>
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:maxWidth="160dp"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
                 <RelativeLayout
@@ -52,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="کد رزرو "
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
 
@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:maxWidth="160dp"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
                 <RelativeLayout
@@ -88,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="تاریخ"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
 
@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:maxWidth="160dp"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
                 <RelativeLayout
@@ -124,7 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="روز "
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
 
@@ -146,7 +146,7 @@
                     android:gravity="center"
                     android:maxWidth="160dp"
                     android:text=""
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
                 <RelativeLayout
@@ -161,7 +161,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="نام استخر"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
 
@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:maxWidth="160dp"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
                 <RelativeLayout
@@ -197,7 +197,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="جنسیت"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
 
@@ -218,7 +218,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:maxWidth="160dp"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
                 <RelativeLayout
@@ -233,11 +233,48 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ساعت"
-                    android:textColor="#666666"
+                    android:textColor="#545050"
                     android:textSize="14dp" />
 
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <org.project.poolreservation.custom_text.textview.NumberTextView
+                    android:id="@+id/absece"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxWidth="160dp"
+                    android:textColor="#545050"
+                    android:textSize="14dp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/horizontaly_white_line" />
+
+                <org.project.poolreservation.custom_text.textview.NumberTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="وضعیت"
+                    android:textColor="#545050"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
 
 
 

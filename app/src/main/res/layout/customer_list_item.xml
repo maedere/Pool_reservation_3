@@ -3,79 +3,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-    <RelativeLayout
-        android:layout_width="350dp"
-        android:layout_height="135dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:background="@drawable/back_ground_3"
-        >
-
-        <TextView
-            android:id="@+id/customer_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="38dp"
-            android:layout_marginRight="15dp"
-            android:text="نام مشتری"
-            android:textSize="18sp"
-            android:textColor="#000000"
-            />
-
-        <TextView
-            android:id="@+id/customer_phonenumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/customer_name"
-            android:layout_marginBottom="25dp"
-            android:layout_marginRight="15dp"
-            android:text="شماره مشتری"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:textColor="#000000"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/reservation_code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="کد رزرو"
-            android:textSize="20dp"
-            android:textColor="#000000"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="25dp"/>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
 
-        <Button
-            android:id="@+id/present"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="100dp"
-            android:text="حضور"
-            android:background="#2E7D32"
-            android:textColor="@android:color/white"
-            />
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_ground_3"
+            >
 
-        <Button
-            android:id="@+id/absent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:text="عدم حضور"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:background="#c62828"
-            android:textColor="@android:color/white"/>
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="نام مشتری"
+                android:textSize="20sp"
+                android:textColor="#545050"
+                />
+
+            <TextView
+                android:id="@+id/customer_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/customer_name"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="20dp"
+                android:text="شماره مشتری"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#545050"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/reservation_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="کد رزرو"
+                android:textColor="#545050"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="115dp"
+                android:layout_marginBottom="20dp"
+                android:background="#2E7D32"
+                android:text="حضور"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#c62828"
+                android:clickable="true"
+                android:text="عدم حضور"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
 
 </LinearLayout>

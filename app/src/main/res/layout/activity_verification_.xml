@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.Verification_Activity">
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="92dp"
-        android:textSize="18sp"
+        android:layout_marginTop="153dp"
+        android:layout_marginRight="16dp"
+        android:paddingRight="20dp"
         android:text="کد تایید را وارد کنید:"
         android:textColor="#545050"
-        android:paddingRight="20dp"
-        android:textStyle="bold"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <LinearLayout
     android:layout_width="300dp"
@@ -38,7 +39,7 @@
 </LinearLayout>
     <Button
         android:id="@+id/button2"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonbordershadow"

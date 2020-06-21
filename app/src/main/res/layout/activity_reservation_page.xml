@@ -13,21 +13,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:text="آیا مطمئنید که می‌خواهید رزرو کنید؟ در صورت عدم حضور شما، امتیازتان کسر می‌شود."
-        android:textSize="35dp" />
-
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="آیا مطمئنید که می‌خواهید رزرو کنید؟
+        در صورت عدم حضور شما، امتیازتان کسر می‌شود."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#545050"/>
     <Button
         android:id="@+id/button6"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"
-        android:layout_marginTop="253dp"
         android:background="@drawable/buttonbordershadow"
         android:clickable="true"
         android:gravity="center"
-        android:shadowColor="@color/colorPrimaryDark"
         android:text="رزرو"
         android:textColor="#ffffffff"
         android:textSize="20sp"

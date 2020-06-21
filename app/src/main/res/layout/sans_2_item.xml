@@ -19,8 +19,10 @@
             android:layout_alignParentRight="true"
             android:paddingTop="83dp"
             android:textSize="18sp"
+            android:textColor="#545050"
             android:text="12:33"
-            android:paddingRight="20dp"/>
+            android:paddingRight="20dp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/sex"
@@ -34,7 +36,7 @@
             android:paddingRight="30dp"
             android:paddingTop="0dp"
             android:textSize="18sp"
-            android:textColor="#000000"
+            android:textColor="#545050"
             android:layout_alignParentRight="true"
             android:layout_marginRight="47dp" />
 
@@ -46,7 +48,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="47dp"
             android:background="@drawable/back_ground_2"
-            android:textColor="#000000"
+            android:textColor="#545050"
             android:gravity="center"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="47dp" />
@@ -58,7 +60,10 @@
             android:layout_alignParentStart="true"
             android:layout_alignTop="@+id/sex"
             android:layout_marginStart="108dp"
+            android:textColor="#545050"
             android:text="تعداد رزرو:"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="108dp" />
 
@@ -87,6 +92,15 @@
             android:clickable="true"
 
             tools:ignore="UnknownId" />
+
+        <Button
+            android:id="@+id/customerbtn"
+            android:layout_marginTop="83dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_ground_2"
+            android:text="مشتریان" />
     </RelativeLayout>
 
 </LinearLayout>

@@ -6,11 +6,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Customer_Reserved_Page">
+    <RelativeLayout
+        android:id="@+id/reserved_sans"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/abseceNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#545050"
+        android:layout_gravity="center_horizontal"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyReserved"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/no_reserved_sans"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#545050"
+            android:text="هیچ سانسی رزور نشده است"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 
 
