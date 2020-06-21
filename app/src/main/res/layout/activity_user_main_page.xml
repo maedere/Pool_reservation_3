@@ -1,57 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 android:layout_width="match_parent"
-android:layout_height="wrap_content"
+android:layout_height="match_parent"
 xmlns:tools="http://schemas.android.com/tools"
-tools:context=".user_main_page">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
-
-    <LinearLayout
+tools:context=".UserMainPage">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="8dp"
-        android:background="#E0E0E0">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/android_black_icon"
-            android:layout_margin="10dp"
-            android:tint="#424242"/>
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="327dp"
-            android:layout_height="wrap_content"
-            android:hint="جستجوی نام استخر" />
-
-        <SearchView
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/has_pool"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/visitReservedbtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbordershadow"
+                android:layout_gravity="center_horizontal"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="مشاهده ی سانس های رزرو شده"
+                android:textSize="18dp"/>
 
-        </SearchView>
-    </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyPools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
 
-
-    <ListView
-        android:id="@+id/listview"
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/no_pool"
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="599dp"
-
-        />
-
-
-</LinearLayout>
-
-</ScrollView>
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="هیچ استخری ثبت نشده است"
+            android:textColor="#3F51B5"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="500dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

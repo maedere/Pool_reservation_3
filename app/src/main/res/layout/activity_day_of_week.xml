@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.DayOfWeekActivity">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/actionbar"
@@ -14,24 +16,25 @@
         android:background="@color/colorPrimary"
         android:gravity="center_vertical">
 
-        <org.project.pool_reservation.custom_text.textview.NumberTextView
+        <org.project.poolreservation.custom_text.textview.NumberTextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
             android:text="انتخاب سانس"
-            android:textColor="@color/colorWhite"
+            android:textColor="#ffffff"
             android:textSize="17dp"
             android:textStyle="bold" />
 
         <Button
+            android:visibility="invisible"
             android:id="@+id/btnTop"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="10dp"
-            android:background="@color/colorWhite"
+            android:background="#ffffff"
             android:text="هفته بعد"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16dp" />
@@ -90,5 +93,20 @@
 
         </LinearLayout>
     </RelativeLayout>
-
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/noSans"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="برای این روز سانسی ثبت نشده است"
+            android:textSize="25sp"
+            android:textColor="#673AB7"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 </RelativeLayout>
