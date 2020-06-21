@@ -14,14 +14,14 @@
         android:background="@color/colorPrimary"
         android:gravity="center_vertical">
 
-        <org.project.pool_reservation.custom_text.textview.NumberTextView
+        <org.project.poolreservation.custom_text.textview.NumberTextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
             android:text="انتخاب سانس"
-            android:textColor="@color/colorWhite"
+            android:textColor="#ffffff"
             android:textSize="17dp"
             android:textStyle="bold" />
 
@@ -31,7 +31,7 @@
             android:layout_height="35dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="10dp"
-            android:background="@color/colorWhite"
+            android:background="#ffffff"
             android:text="هفته بعد"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16dp" />

@@ -32,15 +32,15 @@
                 android:gravity="right"
                 android:layout_height="wrap_content">
 
-                <org.project.pool_reservation.custom_text.textview.NumberTextView
+                <org.project.poolreservation.custom_text.textview.NumberTextView
                     android:id="@+id/gender"
                     android:layout_width="wrap_content"
                     android:text=""
                     android:textSize="16dp"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
-                <org.project.pool_reservation.custom_text.textview.NumberTextView
+                <org.project.poolreservation.custom_text.textview.NumberTextView
                     android:id="@+id/capacity"
                     android:layout_width="wrap_content"
                     android:text=""
@@ -48,12 +48,12 @@
                     android:textColor="#6C6C6C"
                     android:layout_height="wrap_content"/>
 
-                <org.project.pool_reservation.custom_text.textview.NumberTextView
+                <org.project.poolreservation.custom_text.textview.NumberTextView
                     android:id="@+id/off"
                     android:layout_width="wrap_content"
                     android:text=""
                     android:textSize="16dp"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
 
@@ -66,14 +66,15 @@
                 android:gravity="right"
                 android:layout_height="wrap_content">
 
-            <org.project.pool_reservation.custom_text.textview.NumberTextView
+            <org.project.poolreservation.custom_text.textview.NumberTextView
                 android:gravity="right"
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
+                android:text=""
                 android:textSize="16dp"
-                android:textColor="@color/colorBlack"
+                android:textColor="#000000"
                 android:layout_height="wrap_content"/>
             </LinearLayout>
 
