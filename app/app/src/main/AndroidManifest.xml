@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.project.poolreservation">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl">
+        <activity android:name="org.project.PoolResetvation.pool_row"/>
+        <activity android:name="org.project.PoolResetvation.Owner_register_page" />
+        <activity android:name="org.project.PoolResetvation.Reservation_page" />
+        <activity android:name=".activities.UserTypePage" />
+        <activity android:name=".activities.Owner_Register_Page_First" />
+        <activity android:name=".activities.Customer_Register_Page" />
+        <activity android:name=".list_view" />
+        <activity android:name=".pool_info_page" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Customer_Reserved_Page"/>
+        <activity android:name=".Reservation_page"/>
+        <activity android:name=".activities.Verification_Activity" />
+        <activity android:name=".activities.Owner_visit_sansActivity" />
+        <activity android:name=".activities.Public_register_Activity" />
+        <activity android:name=".activities.Singup_Activity" />
+        <activity android:name=".activities.new_sans_Activity" />
+        <activity android:name=".activities.edit_sans_Activty" />
+        <activity android:name=".activities.Calendar_Activity" />
+        <activity android:name=".activities.DayOfWeekActivity" />
+        <activity android:name=".activities.Pool_Register_Page" />
+        <activity android:name=".Customer_List_Page"/>
+        <activity android:name=".UserMainPage"/>
+        <activity android:name=".activities.Owner_Register_Page">
+
+        </activity>
+    </application>
+
+</manifest>

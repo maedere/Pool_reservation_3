@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/shape4">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="5dp"
+            android:textSize="18sp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="85dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="47dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/shape2"
+            android:paddingRight="30dp"
+            android:paddingTop="0dp"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="47dp" />
+
+        <TextView
+            android:id="@+id/reserve"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/sex"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="47dp"
+            android:background="@drawable/shape2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="47dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/sex"
+            android:layout_marginStart="108dp"
+            android:text="تعداد رزرو:"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="108dp" />
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="85dp"
+            android:layout_marginTop="83dp"
+            android:text="ویرایش سانس"
+            android:background="@drawable/shape"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:layout_marginRight="85dp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="83dp"
+            android:layout_marginStart="85dp"
+            android:background="@drawable/shape"
+            android:text="حذف سانس"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="85dp"
+            tools:ignore="UnknownId" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>
